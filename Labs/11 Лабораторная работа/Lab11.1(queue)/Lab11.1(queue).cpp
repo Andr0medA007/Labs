@@ -1,9 +1,12 @@
 ﻿#include <iostream>
+#include <fstream>
 using namespace std;
+
+int n;
 
 struct Node {
     char data;
-    Node* next;
+    Node* prev;
 };
 struct queue {
     int size;
@@ -13,17 +16,21 @@ struct queue {
 
 void init_queue(queue& q, const char& value);
 void new_queue(queue& q, int n);
-void push(queue& q, const char& value);
+void push(queue& q, char value);
 void print(queue& q);
 void pop(queue& q);
 void del_key(queue& q, char r);
 void insert(queue& q,int count, char r);
+void write(queue& q);
+void del_queue(queue& q);
+void get(queue& q);
 
 int main()
 {
     system("chcp 1251");
+    system("cls");
     queue q;
-    int n;
+    
     char r;
     do {
         cout << "Введите длину очереди: " << endl;
@@ -42,6 +49,11 @@ int main()
     int count;
     cin >> count;
     insert(q, count, r);
+    print(q);
+    write(q);
+    del_queue(q);
+    print(q);
+    get(q);
     print(q);
 
 }
@@ -64,25 +76,25 @@ void new_queue(queue& q, int n) {
         push(q, r);
     }
 }
-void push(queue& q, const char& value) {
+void push(queue& q, char value) {
     Node* new_node = new Node;
     q.size++;
     new_node->data = value;
-    new_node->next = nullptr;
-    q.tn->next = new_node;
+    new_node->prev = nullptr;
+    q.tn->prev = new_node;
     q.tn = new_node;
 }
 void print(queue& q) {
     Node* tmp = q.hn;
     while (tmp != nullptr) {
         cout << tmp->data << " ";
-        tmp = tmp->next;
+        tmp = tmp->prev;
     }
     cout << endl;
 }
 void pop(queue& q) {
     Node* tmp = q.hn;
-    q.hn = q.hn->next;
+    q.hn = q.hn->prev;
     q.size--;
     delete tmp;
 }
@@ -102,9 +114,7 @@ void del_key(queue& q, char r) {
 void insert(queue& q, int count,char r) {
     Node* cur = new Node;
     int k = 0;
-    cur = q.hn;
-    cur->data = q.hn->data;
-    while (cur->data != r){
+    while (q.hn->data != r){
         push(q, q.hn->data);
         pop(q);
         k++;
@@ -114,8 +124,40 @@ void insert(queue& q, int count,char r) {
         cin >> r;
         push(q, r);
     }
-    for (k; k <= q.size - count; k++) {
+    for (k; k < q.size - count ; k++) {
         push(q, q.hn->data);
         pop(q);
     }
+}
+void write(queue& q) {
+    ofstream out;
+    out.open("File.txt");
+    
+    if (out.is_open()) {
+        while (q.hn != nullptr) {
+            out << q.hn->data << endl;
+            q.hn = q.hn->prev;
+        }
+        delete q.hn;
+    }
+}
+void del_queue(queue& q) {
+    while (q.hn != nullptr) {
+        Node* cur = new Node;
+        cur = q.hn;
+        q.hn = q.hn->prev;
+        delete cur;
+    }
+}
+void get(queue& q) {
+    ifstream in;
+    in.open("File.txt");
+    char r;
+    Node* new_node = new Node;
+    q.hn = new_node;
+    q.tn = new_node;
+    while(in.get(r)){
+        push(q, r);
+    }
+    pop(q);
 }

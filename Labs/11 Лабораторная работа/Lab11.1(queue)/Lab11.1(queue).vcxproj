@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="Lab11.1(queue).cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="File.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

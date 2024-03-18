@@ -2,6 +2,7 @@
 #include <fstream>
 using namespace std;
 char r;
+int n, k = 0;
 
 struct Stack {
     char data;
@@ -9,14 +10,16 @@ struct Stack {
 };
 Stack* make_stack(int n);
 void print(Stack* first);
-char pop(Stack*& first);
+char pop(Stack*& first); 
 Stack* push(Stack*& first, char r);
-void download(Stack& stack);
+Stack* send(Stack*& first);
+Stack* del(Stack*& first);
+Stack* revive_stack();
 
 int main()
 {
     setlocale(LC_ALL, "Ru");
-    int n, k = 0,j = 0;
+    int j = 0;
     cout << "Количество элементов стека: " << endl;
     cin >> n;
     Stack* stack = make_stack(n);
@@ -27,11 +30,11 @@ int main()
     
     for (int i = 0; i < n; i++) {
         char del = pop(stack);
-        if (del == r) {
-            k++;
+        if (del != r) {
+            push(stack2, del);
         }
         else {
-            push(stack2, del);
+            k = k + 1;
         }
     }
     n = n - k;
@@ -60,6 +63,13 @@ int main()
         push(stack, del);
     }
     print(stack);
+    send(stack);
+    del(stack);
+    print(stack);
+   
+    Stack* stack3 = revive_stack();
+
+    print(stack3);
     return 0;
 }
 
@@ -103,10 +113,10 @@ char pop(Stack*& first) {
     if (k == 1) {
         char t = first->data;
         delete cur;
-        first = nullptr;
+        first = NULL;
         return t;
     }
-    else {
+    if (k>1) { 
         Stack* t = cur->prev;
         char l = cur->data;
         first = t;
@@ -121,14 +131,45 @@ Stack* push(Stack*& first, char r) {
     first = cur;
     return first;
 }
-void download(Stack*& first) {
+Stack* send(Stack*& first) {
     ofstream out;
     out.open("File.txt");
     if (out.is_open()){
-        while (first != nullptr) {
+        while (first != NULL) {
             out << first->data << endl;
             first = first->prev;
         }
     delete first;
     }
+    return 0;
+}
+Stack* del(Stack*& first) {
+    Stack* cur = first;
+    while (cur != NULL) {
+        Stack* t = cur->prev;
+        delete cur;
+        cur = t;
+    }
+    return 0;
+}
+Stack* revive_stack() {
+    if (n == 0) return 0;
+    ifstream in;
+    in.open("File.txt");
+    Stack* first;
+    Stack* current;
+    first = NULL;
+    current = new Stack;
+    r = in.get();
+    current->data = r;
+    current->prev = NULL;
+    first = current;
+    for (int i = 2; i <= 3*n; i++) {
+        Stack* m = new Stack;
+        r = in.get();
+        m->data = r;
+        m->prev = first;
+        first = m;
+    }
+    return first;
 }
