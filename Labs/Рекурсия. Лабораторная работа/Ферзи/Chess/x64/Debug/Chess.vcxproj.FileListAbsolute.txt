@@ -1,2 +1,0 @@
-C:\Users\Andre\source\repos\Chess\x64\Debug\Chess.exe
-C:\Users\Andre\Desktop\WorkSpace\Labs\Рекурсия. Лабораторная работа\Ферзи\Chess\x64\Debug\Chess.exe
