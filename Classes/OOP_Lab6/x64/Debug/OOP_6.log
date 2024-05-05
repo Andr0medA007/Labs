@@ -1,6 +1,7 @@
-﻿  List.cpp
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (OOP_6.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  List.cpp
   OOP_6.cpp
-C:\Users\Andre\source\repos\OOP_6\OOP_6.cpp(8,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\OOP_Lab6\OOP_6.cpp(8,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   Создание кода...
-C:\Users\Andre\source\repos\OOP_6\List.h(44,1): warning C4172: возвращение адреса локальной или временной переменной : tmp
-  OOP_6.vcxproj -> C:\Users\Andre\source\repos\Projects\x64\Debug\OOP_6.exe
+C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\OOP_Lab6\List.h(44,1): warning C4172: возвращение адреса локальной или временной переменной : tmp
+  OOP_6.vcxproj -> C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\x64\Debug\OOP_Lab6.exe

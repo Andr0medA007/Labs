@@ -37,19 +37,16 @@ public:
 		first = p.first;
 		second = p.second;
 	}
-	bool operator>(const Pair& p) {
-		if (first > p.first && second > p.second) {
+	bool operator >(const Pair& p) {
+		if (first + second > p.first + p.second) {
 			return 1;
 		}
-		else if (first > p.first && second < p.second) {
-			return 1;
-		}
-		else if (first < p.first && second > p.second){
+		else {
 			return 0;
 		}
 	}
-	bool operator<(const Pair& p) {
-		if (first < p.first && second < p.second) {
+	bool operator <(const Pair& p) {
+		if (first + second < p.first + p.second) {
 			return 1;
 		}
 		else {
@@ -66,7 +63,7 @@ public:
 		return stream;
 	}
 	friend bool operator<(const Pair& a, const Pair& b) {
-		if (a < b) {
+		if (a.first + a.second < b.first + b.second) {
 			return 1;
 		}
 		else {
@@ -74,12 +71,15 @@ public:
 		}
 	}
 	friend bool operator>(const Pair& a, const Pair& b) {
-		if (a > b) {
+		if (a.first + a.second > b.first + b.second) {
 			return 1;
 		}
 		else {
 			return 0;
 		}
 	}
-
+	void operator /(const int& x) {
+		this->first = this->first / x;
+		this->second = this->second / x;
+	}
 };
