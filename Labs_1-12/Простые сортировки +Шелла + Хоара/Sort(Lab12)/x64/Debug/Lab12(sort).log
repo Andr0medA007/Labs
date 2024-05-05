@@ -1,0 +1,24 @@
+﻿  Lab12(sort).cpp
+C:\Users\Andre\Desktop\WorkSpace\Labs\Простые сортировки + Хоара + Шелла\Lab12(sort)\Bucket_sort.h(5,18): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+  (компиляция исходного файла "Lab12(sort).cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Простые сортировки + Хоара + Шелла\Lab12(sort)\Bucket_sort.h(6,18): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+  (компиляция исходного файла "Lab12(sort).cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Простые сортировки + Хоара + Шелла\Lab12(sort)\Bucket_sort.h(10,21): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  (компиляция исходного файла "Lab12(sort).cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Простые сортировки + Хоара + Шелла\Lab12(sort)\Bucket_sort.h(13,21): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  (компиляция исходного файла "Lab12(sort).cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Простые сортировки + Хоара + Шелла\Lab12(sort)\Bucket_sort.h(16,17): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+  (компиляция исходного файла "Lab12(sort).cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Простые сортировки + Хоара + Шелла\Lab12(sort)\QuickSort9.h(24,40): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Lab12(sort).cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Простые сортировки + Хоара + Шелла\Lab12(sort)\Shell_sort.h(6,10): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Lab12(sort).cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Простые сортировки + Хоара + Шелла\Lab12(sort)\Lab12(sort).cpp(27,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Lab12(sort).vcxproj -> C:\Users\Andre\Desktop\WorkSpace\Labs\Простые сортировки + Хоара + Шелла\Lab12(sort)\x64\Debug\Lab12(sort).exe
