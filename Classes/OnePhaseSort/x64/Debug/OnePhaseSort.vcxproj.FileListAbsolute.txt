@@ -1,2 +1,0 @@
-C:\Users\Andre\source\repos\OnePhaseSort\x64\Debug\OnePhaseSort.exe
-C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\OnePhaseSort\x64\Debug\OnePhaseSort.exe
