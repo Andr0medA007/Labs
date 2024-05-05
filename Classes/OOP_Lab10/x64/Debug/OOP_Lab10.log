@@ -1,0 +1,22 @@
+﻿  main.cpp
+C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\OOP_Lab10\Pair.h(18,33): warning C4244: return: преобразование "const double" в "int", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\OOP_Lab10\Pair.h(25,11): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\OOP_Lab10\Pair.h(27,13): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+  Pair.cpp
+C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\OOP_Lab10\Pair.h(18,33): warning C4244: return: преобразование "const double" в "int", возможна потеря данных
+  (компиляция исходного файла "Pair.cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\OOP_Lab10\Pair.h(25,11): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  (компиляция исходного файла "Pair.cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\OOP_Lab10\Pair.h(27,13): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  (компиляция исходного файла "Pair.cpp")
+  
+  Создание кода...
+  OOP_Lab10.vcxproj -> C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\x64\Debug\OOP_Lab10.exe

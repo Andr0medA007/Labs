@@ -1,0 +1,8 @@
+﻿  ManyPhaseSort.cpp
+C:\Users\Andre\source\repos\ManyPhaseSort\ManyPhaseSort.cpp(23,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andre\source\repos\ManyPhaseSort\ManyPhaseSort.cpp(94,8): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andre\source\repos\ManyPhaseSort\ManyPhaseSort.cpp(95,8): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andre\source\repos\ManyPhaseSort\ManyPhaseSort.cpp(130,49): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andre\source\repos\ManyPhaseSort\ManyPhaseSort.cpp(156,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Andre\source\repos\ManyPhaseSort\ManyPhaseSort.cpp(79,1): warning C4715: ideal_series: значение возвращается не при всех путях выполнения
+  ManyPhaseSort.vcxproj -> C:\Users\Andre\source\repos\Projects\x64\Debug\ManyPhaseSort.exe
