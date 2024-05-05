@@ -1,0 +1,4 @@
+﻿  OOP_6.cpp
+C:\Users\Andre\source\repos\OOP_6\OOP_6.cpp(8,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Andre\source\repos\OOP_6\List.h(44,1): warning C4172: возвращение адреса локальной или временной переменной : tmp
+  OOP_6.vcxproj -> C:\Users\Andre\source\repos\OOP_6\x64\Debug\OOP_6.exe

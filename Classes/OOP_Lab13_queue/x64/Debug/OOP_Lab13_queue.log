@@ -1,0 +1,4 @@
+﻿  queue.cpp
+C:\Users\Andre\source\repos\Projects\OOP_Lab13_queue\queue.cpp(33,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Andre\source\repos\Projects\OOP_Lab13_queue\queue.cpp(45,30): warning C4267: аргумент: преобразование из "size_t" в "const int"; возможна потеря данных
+  OOP_Lab13_queue.vcxproj -> C:\Users\Andre\source\repos\Projects\x64\Debug\OOP_Lab13_queue.exe

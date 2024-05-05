@@ -1,0 +1,4 @@
+﻿  OnePhaseSort.cpp
+C:\Users\Andre\source\repos\OnePhaseSort\OnePhaseSort.cpp(20,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andre\source\repos\OnePhaseSort\OnePhaseSort.cpp(68,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  OnePhaseSort.vcxproj -> C:\Users\Andre\source\repos\Projects\x64\Debug\OnePhaseSort.exe
