@@ -1,3 +1,0 @@
-﻿  Lab12(sort).cpp
-C:\Users\Andre\source\repos\Lab12(sort)\Lab12(sort).cpp(19,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Lab12(sort).vcxproj -> C:\Users\Andre\source\repos\Lab12(sort)\x64\Debug\Lab12(sort).exe
