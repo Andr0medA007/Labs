@@ -1,0 +1,15 @@
+﻿  Find_Lab.cpp
+C:\Users\Andre\source\repos\Find_Lab\Substring_Search.h(6,8): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Find_Lab.cpp")
+  
+C:\Users\Andre\source\repos\Find_Lab\Substring_Search.h(7,8): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Find_Lab.cpp")
+  
+C:\Users\Andre\source\repos\Find_Lab\KMP.h(28,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Find_Lab.cpp")
+  
+C:\Users\Andre\source\repos\Find_Lab\Find_Lab.cpp(105,20): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andre\source\repos\Find_Lab\Find_Lab.cpp(106,21): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andre\source\repos\Find_Lab\Find_Lab.cpp(157,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andre\source\repos\Find_Lab\Find_Lab.cpp(199): warning C4715: BMsearch: значение возвращается не при всех путях выполнения
+  Find_Lab.vcxproj -> C:\Users\Andre\source\repos\Find_Lab\x64\Debug\Find_Lab.exe

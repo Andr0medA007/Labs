@@ -1,0 +1,13 @@
+﻿  Find_Lab.cpp
+C:\Users\Andre\Desktop\WorkSpace\Labs\1-12 Lab's\Поиски\Substring_Search.h(6,8): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Find_Lab.cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\1-12 Lab's\Поиски\Substring_Search.h(7,8): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Find_Lab.cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\1-12 Lab's\Поиски\KMP.h(28,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Find_Lab.cpp")
+  
+C:\Users\Andre\Desktop\WorkSpace\Labs\1-12 Lab's\Поиски\Find_Lab.cpp(102,20): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andre\Desktop\WorkSpace\Labs\1-12 Lab's\Поиски\Find_Lab.cpp(103,21): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  Find_Lab.vcxproj -> C:\Users\Andre\Desktop\WorkSpace\Labs\1-12 Lab's\Поиски\x64\Debug\Find_Lab.exe
