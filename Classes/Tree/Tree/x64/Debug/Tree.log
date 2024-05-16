@@ -1,0 +1,241 @@
+﻿  main.cpp
+C:\Users\Andre\source\repos\Tree\tree.h(333,12): error C2079: "file" использует не имеющую определения структуру class "std::basic_ifstream<char,std::char_traits<char>>"
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(333,12):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	C:\Users\Andre\source\repos\Tree\main.cpp(10,30):
+  	выполняется компиляция ссылки на экземпляр класс шаблон функции "Tree<double>"
+  	C:\Users\Andre\source\repos\Tree\tree.h(328,7):
+  	во время компиляции функции-члена класс шаблон "void Tree<double>::print_vertical(void)"
+  		C:\Users\Andre\source\repos\Tree\main.cpp(15,25):
+  		см. первую ссылку на "Tree<double>::print_vertical" в "main"
+  
+C:\Users\Andre\source\repos\Tree\tree.h(333,16): error C2440: инициализация: невозможно преобразовать "const char [9]" в "int"
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(333,16):
+  Не существует контекста, в котором такое преобразование возможно
+  
+C:\Users\Andre\source\repos\Tree\tree.h(334,30): error C2514: "std::vector": невозможно создать шаблон класса.
+  (компиляция исходного файла "main.cpp")
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(436,7):
+   см. объявление "std::vector"
+  
+C:\Users\Andre\source\repos\Tree\tree.h(338,17): error C2440: =: невозможно преобразовать "int" в "_Ty"
+C:\Users\Andre\source\repos\Tree\tree.h(338,17): error C2440:         with
+C:\Users\Andre\source\repos\Tree\tree.h(338,17): error C2440:         [
+C:\Users\Andre\source\repos\Tree\tree.h(338,17): error C2440:             _Ty=double *
+C:\Users\Andre\source\repos\Tree\tree.h(338,17): error C2440:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(338,17):
+  Для преобразования из целого типа в указатель требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+  
+C:\Users\Andre\source\repos\Tree\tree.h(342,34): error C2514: "std::vector": невозможно создать шаблон класса.
+  (компиляция исходного файла "main.cpp")
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(436,7):
+   см. объявление "std::vector"
+  
+C:\Users\Andre\source\repos\Tree\tree.h(345,30): error C2296: "*": недопустимо, поскольку тип левого операнда — "_Ty"
+C:\Users\Andre\source\repos\Tree\tree.h(345,30): error C2296:         with
+C:\Users\Andre\source\repos\Tree\tree.h(345,30): error C2296:         [
+C:\Users\Andre\source\repos\Tree\tree.h(345,30): error C2296:             _Ty=int *
+C:\Users\Andre\source\repos\Tree\tree.h(345,30): error C2296:         ]
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Andre\source\repos\Tree\tree.h(354,25): error C2446: <: нет преобразования "_Ty" в "int"
+C:\Users\Andre\source\repos\Tree\tree.h(354,25): error C2446:         with
+C:\Users\Andre\source\repos\Tree\tree.h(354,25): error C2446:         [
+C:\Users\Andre\source\repos\Tree\tree.h(354,25): error C2446:             _Ty=int *
+C:\Users\Andre\source\repos\Tree\tree.h(354,25): error C2446:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(354,35):
+  Не существует контекста, в котором такое преобразование возможно
+  
+C:\Users\Andre\source\repos\Tree\tree.h(359,25): error C2446: <: нет преобразования "_Ty" в "int"
+C:\Users\Andre\source\repos\Tree\tree.h(359,25): error C2446:         with
+C:\Users\Andre\source\repos\Tree\tree.h(359,25): error C2446:         [
+C:\Users\Andre\source\repos\Tree\tree.h(359,25): error C2446:             _Ty=int *
+C:\Users\Andre\source\repos\Tree\tree.h(359,25): error C2446:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(359,39):
+  Не существует контекста, в котором такое преобразование возможно
+  
+C:\Users\Andre\source\repos\Tree\tree.h(363,10): error C2679: бинарный "[": не найден оператор, принимающий правый операнд типа "overloaded-function" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(1900,40):
+  может быть "const _Ty &std::vector<_Ty,std::allocator<_Ty>>::operator [](const unsigned __int64) noexcept const"
+          with
+          [
+              _Ty=double *
+          ]
+  	C:\Users\Andre\source\repos\Tree\tree.h(363,10):
+  	"const _Ty &std::vector<_Ty,std::allocator<_Ty>>::operator [](const unsigned __int64) noexcept const": невозможно преобразовать аргумент 2 из "iterator_traits<_Iter>::difference_type (__cdecl *)(const _InIt,const _InIt,const _Ty &)" в "const unsigned __int64"
+          with
+          [
+              _Ty=double *
+          ]
+  		C:\Users\Andre\source\repos\Tree\tree.h(363,14):
+  		Контекст не позволяет устранить неоднозначность перегруженной функции
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(1890,34):
+  или       "_Ty &std::vector<_Ty,std::allocator<_Ty>>::operator [](const unsigned __int64) noexcept"
+          with
+          [
+              _Ty=double *
+          ]
+  	C:\Users\Andre\source\repos\Tree\tree.h(363,10):
+  	"_Ty &std::vector<_Ty,std::allocator<_Ty>>::operator [](const unsigned __int64) noexcept": невозможно преобразовать аргумент 2 из "iterator_traits<_Iter>::difference_type (__cdecl *)(const _InIt,const _InIt,const _Ty &)" в "const unsigned __int64"
+          with
+          [
+              _Ty=double *
+          ]
+  		C:\Users\Andre\source\repos\Tree\tree.h(363,14):
+  		Контекст не позволяет устранить неоднозначность перегруженной функции
+  C:\Users\Andre\source\repos\Tree\tree.h(363,10):
+  при попытке сопоставить список аргументов "(std::vector<T *,std::allocator<T *>>, overloaded-function)"
+          with
+          [
+              T=double
+          ]
+  
+C:\Users\Andre\source\repos\Tree\tree.h(364,20): error C2563: несоответствие в списке формальных параметров
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Andre\source\repos\Tree\tree.h(371,43): warning C4244: аргумент: преобразование "double" в "const unsigned __int64", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Andre\source\repos\Tree\tree.h(371,24): error C2440: инициализация: невозможно преобразовать "std::vector<T,std::allocator<T>> *" в "std::vector<T *,std::allocator<T *>>"
+C:\Users\Andre\source\repos\Tree\tree.h(371,24): error C2440:         with
+C:\Users\Andre\source\repos\Tree\tree.h(371,24): error C2440:         [
+C:\Users\Andre\source\repos\Tree\tree.h(371,24): error C2440:             T=double
+C:\Users\Andre\source\repos\Tree\tree.h(371,24): error C2440:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(371,24):
+  "std::vector<T *,std::allocator<T *>>::vector": ни одна перегруженная функция не может преобразовать все типы аргументов
+          with
+          [
+              T=double
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(654,5):
+  	может быть "std::vector<T *,std::allocator<T *>>::vector(std::initializer_list<_Ty>,const _Alloc &)"
+          with
+          [
+              T=double,
+              _Ty=double *,
+              _Alloc=std::allocator<double *>
+          ]
+  		C:\Users\Andre\source\repos\Tree\tree.h(371,24):
+  		"std::vector<T *,std::allocator<T *>>::vector(std::initializer_list<_Ty>,const _Alloc &)": невозможно преобразовать аргумент 1 из "std::vector<T,std::allocator<T>> *" в "std::initializer_list<_Ty>"
+          with
+          [
+              T=double,
+              _Ty=double *,
+              _Alloc=std::allocator<double *>
+          ]
+          and
+          [
+              T=double
+          ]
+          and
+          [
+              _Ty=double *
+          ]
+  			C:\Users\Andre\source\repos\Tree\tree.h(371,39):
+  			Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(627,5):
+  	или       "std::vector<T *,std::allocator<T *>>::vector(_Iter,_Iter,const _Alloc &)"
+          with
+          [
+              T=double,
+              _Alloc=std::allocator<double *>
+          ]
+  	C:\Users\Andre\source\repos\Tree\tree.h(371,24):
+  	при попытке сопоставить список аргументов "(std::vector<T,std::allocator<T>> *)"
+          with
+          [
+              T=double
+          ]
+  
+C:\Users\Andre\source\repos\Tree\tree.h(373,19): error C2440: =: невозможно преобразовать "__int64" в "_Ty"
+C:\Users\Andre\source\repos\Tree\tree.h(373,19): error C2440:         with
+C:\Users\Andre\source\repos\Tree\tree.h(373,19): error C2440:         [
+C:\Users\Andre\source\repos\Tree\tree.h(373,19): error C2440:             _Ty=double *
+C:\Users\Andre\source\repos\Tree\tree.h(373,19): error C2440:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(373,19):
+  Для преобразования из целого типа в указатель требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+  
+C:\Users\Andre\source\repos\Tree\tree.h(377,13): error C2440: инициализация: невозможно преобразовать "_Ty" в "int"
+C:\Users\Andre\source\repos\Tree\tree.h(377,13): error C2440:         with
+C:\Users\Andre\source\repos\Tree\tree.h(377,13): error C2440:         [
+C:\Users\Andre\source\repos\Tree\tree.h(377,13): error C2440:             _Ty=int *
+C:\Users\Andre\source\repos\Tree\tree.h(377,13): error C2440:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(377,13):
+  Не существует контекста, в котором такое преобразование возможно
+  
+C:\Users\Andre\source\repos\Tree\tree.h(379,15): error C2440: инициализация: невозможно преобразовать "iterator_traits<_Iter>::difference_type (__cdecl *)(const _InIt,const _InIt,const _Ty &)" в "int"
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(379,15):
+  Контекст не позволяет устранить неоднозначность перегруженной функции
+  
+C:\Users\Andre\source\repos\Tree\tree.h(390,32): error C2440: =: невозможно преобразовать "_Ty" в "int"
+C:\Users\Andre\source\repos\Tree\tree.h(390,32): error C2440:         with
+C:\Users\Andre\source\repos\Tree\tree.h(390,32): error C2440:         [
+C:\Users\Andre\source\repos\Tree\tree.h(390,32): error C2440:             _Ty=int *
+C:\Users\Andre\source\repos\Tree\tree.h(390,32): error C2440:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(390,32):
+  Не существует контекста, в котором такое преобразование возможно
+  
+C:\Users\Andre\source\repos\Tree\tree.h(395,21): error C2446: !=: нет преобразования "__int64" в "_Ty"
+C:\Users\Andre\source\repos\Tree\tree.h(395,21): error C2446:         with
+C:\Users\Andre\source\repos\Tree\tree.h(395,21): error C2446:         [
+C:\Users\Andre\source\repos\Tree\tree.h(395,21): error C2446:             _Ty=double *
+C:\Users\Andre\source\repos\Tree\tree.h(395,21): error C2446:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(395,24):
+  Для преобразования из целого типа в указатель требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+  
+C:\Users\Andre\source\repos\Tree\tree.h(395,54): error C2563: несоответствие в списке формальных параметров
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Andre\source\repos\Tree\tree.h(398,21): error C2446: !=: нет преобразования "__int64" в "_Ty"
+C:\Users\Andre\source\repos\Tree\tree.h(398,21): error C2446:         with
+C:\Users\Andre\source\repos\Tree\tree.h(398,21): error C2446:         [
+C:\Users\Andre\source\repos\Tree\tree.h(398,21): error C2446:             _Ty=double *
+C:\Users\Andre\source\repos\Tree\tree.h(398,21): error C2446:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(398,24):
+  Для преобразования из целого типа в указатель требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+  
+C:\Users\Andre\source\repos\Tree\tree.h(398,50): error C2446: !=: нет преобразования "int" в "_Ty"
+C:\Users\Andre\source\repos\Tree\tree.h(398,50): error C2446:         with
+C:\Users\Andre\source\repos\Tree\tree.h(398,50): error C2446:         [
+C:\Users\Andre\source\repos\Tree\tree.h(398,50): error C2446:             _Ty=double *
+C:\Users\Andre\source\repos\Tree\tree.h(398,50): error C2446:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(398,54):
+  Для преобразования из целого типа в указатель требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+  
+C:\Users\Andre\source\repos\Tree\tree.h(402,13): error C2440: delete: невозможно преобразовать "std::vector<T *,std::allocator<T *>>" в "void*"
+C:\Users\Andre\source\repos\Tree\tree.h(402,13): error C2440:         with
+C:\Users\Andre\source\repos\Tree\tree.h(402,13): error C2440:         [
+C:\Users\Andre\source\repos\Tree\tree.h(402,13): error C2440:             T=double
+C:\Users\Andre\source\repos\Tree\tree.h(402,13): error C2440:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(402,13):
+  Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+  
+C:\Users\Andre\source\repos\Tree\tree.h(404,11): error C2440: delete: невозможно преобразовать "std::vector<T *,std::allocator<T *>>" в "void*"
+C:\Users\Andre\source\repos\Tree\tree.h(404,11): error C2440:         with
+C:\Users\Andre\source\repos\Tree\tree.h(404,11): error C2440:         [
+C:\Users\Andre\source\repos\Tree\tree.h(404,11): error C2440:             T=double
+C:\Users\Andre\source\repos\Tree\tree.h(404,11): error C2440:         ]
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(404,11):
+  Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+  
+C:\Users\Andre\source\repos\Tree\tree.h(405,11): error C2440: delete: невозможно преобразовать "std::vector<int *,std::allocator<int *>>" в "void*"
+  (компиляция исходного файла "main.cpp")
+  C:\Users\Andre\source\repos\Tree\tree.h(405,11):
+  Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+  

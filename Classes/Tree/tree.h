@@ -7,12 +7,18 @@ using namespace std;
 
 template <class T>
 class Tree {
+private:
+	Tree<T>* left;
+	Tree<T>* right;
+	Tree<T>* parent;
+	T data;
+
 public:
 	struct pos {
 		int col; // x
 		int str; // y
 	};
-	Tree(T value, Tree<T>*&parent){
+	Tree(T value, Tree<T>*& parent) {
 		this->right = nullptr;
 		this->left = nullptr;
 		this->parent = parent;
@@ -40,9 +46,10 @@ public:
 		if (right != nullptr) {
 			right->delete_left();
 			right->delete_right();
+			delete right;
 		}
 	}
-	T get_data(){
+	T get_data() {
 		return data;
 	}
 	Tree<T>* get_left() {
@@ -174,24 +181,6 @@ public:
 		if (h1 >= h2) return h1 + 1;
 		else return h2 + 1;
 	}
-	int get_level(Tree<T>*node) {
-		vector<Tree<T>*> vec;
-		Tree<T>* p = this;
-		vec.push_back(p);
-		for (int i = 0; i < this->get_nodes_cnt(); i++) {
-			if (vec.at(i)->left != NULL) {
-				vec.push_back(vec.at(i)->left);
-			}
-			if (vec.at(i)->right != NULL) {
-				vec.push_back(vec.at(i)->right);
-			}
-		}
-		for (int i = 0; i < vec.size(); i++) {
-			cout << vec.at(i)->get_data() << " ";
-		}
-		cout << endl;
-
-	}
 	int get_nodes_cnt() {
 		if (this == NULL) return 0;
 		if ((this->left == NULL) && (this->right == NULL)) return 1;
@@ -213,30 +202,12 @@ public:
 		}
 		return new_tree;
 	}
-	Tree<T>* replaceNullToFull() {
-		Tree<T>* node = this->copy();
-		int h = node->get_height();
-		node = more_replace(node, h);
-		return node;
-	}
-	Tree<T>* more_replace(Tree<T>* node, int h) {
-		int curLvl = get_level(node);
-		if ((node->get_left() == NULL) && (curLvl != h - 1)) {
-			node->insert_left(NULL);
-		}
-		if ((node->get_right() == NULL) && (curLvl != h - 1)) {
-			node->insert_right(NULL);
-		}
-		if (node->get_left() != NULL) node.add_left(more_replace(node->get_left(), h));
-		if (node->get_right() != NULL) node.add_right(more_replace(node->get_right(), h));
-		return node;
-	}
-	void road(Tree<T>* node) {
+	int obh(Tree<T>* node) {
 		ofstream f("File.txt");
-		int cnt = node->get_nodes_cnt();
+		int cnt_of_nodes = node->get_nodes_cnt();
 		queue<Tree<T>*> q;
 		q.push(node);
-		
+
 		while (!q.empty()) {
 			Tree<T>* tmp = q.front();
 			q.pop;
@@ -249,6 +220,7 @@ public:
 			}
 		}
 		f.close();
+		return cnt_of_nodes;
 	}
 	int get_pos(int index, int width, int CurLvl, int MaxLvl) {
 		int x1 = 0;
@@ -262,7 +234,7 @@ public:
 		int y = (int)(k * index + m);
 		return y;
 	}
-	void PrintTreeVertical(int k) {
+	/*void PrintTreeVertical(int k) {
 		int height = this->get_height();
 
 		int maxLeafs = pow(2, height - 1);
@@ -327,18 +299,7 @@ public:
 		}
 		cout << endl;
 	}
-	void print_vertical(int depth = 0) {
-		if (right != nullptr) {
-			right.print_vertical(depth + 1);
-		}
-		for (int i = 0; i < depth; ++i) {
-			cout << "   ";
-		}
-		cout << data << endl;
-		if (left != nullptr) {
-			left.print_vertical(depth + 1);
-		}
-	}
+	*/
 	Tree<T>* balanced(int cnt) {
 		if (cnt <= 0) {
 			return nullptr;
@@ -348,15 +309,100 @@ public:
 		cin >> data;
 		Tree<T>* tmp = new Tree<T>(data);
 		tmp->add_left(balanced(cnt / 2));
-		tmp->add_right(balanced(cnt-cnt / 2-1));
+		tmp->add_right(balanced(cnt - cnt / 2 - 1));
 		return tmp;
 	}
+	void Fill_empty(int i) {
+		if (i == 1) {
+			return;
+		}
+		if (!this->right) {
+			this->insert_right(-1);
+		}
+		if (!this->left) {
+			this->insert_left(-1);
+		}
+		this->right->Fill_empty(i - 1);
+		this->left->Fill_empty(i - 1);
+	}
+	void print_vertical() {
+		Tree<T>* tree1 = this->copy();
+		int height = tree1->get_height();
+		tree1->Fill_empty(height);
+		int node_cnt = obh(tree1);
+		ifstream file("File.txt");
+		vector<T*> mas = new vector(node_cnt);
+		for (int i = 0; i < node_cnt; i++) {
+			char str[255];
+			file.getline(str, 255);
+			mas[i] = atoi(str);
+		}
+		file.close();
+		int cnt = 0;
+		vector<int*>spaces = new vector(height);
+		spaces[0] = 0;
+		for (int i = 1; i < height; i++) {
+			spaces[i] = spaces[i - 1] * 2 + 1;
+		}
+		if (height == 1) {
+			cout << mas[0] << endl;
+		}
+		else {
+			for (int i = 0, l = height - 1; i < height - 1; i++, l--) {
+				for (int j = 0, k = 0; j < pow(2, i); j++, k++) {
+					if (k == 0) {
+						for (int m = 0; m < spaces[l]; m++) {
+							cout << ' ';
+						}
+					}
+					else {
+						for (int m = 0; m < spaces[l + 1]; m++) {
+							cout << ' ';
+						}
+					}
+					if (mas[count] != -1)
+						cout  << mas[count++];
+					else
+						cout  << ' ';
+				}
+				cout << endl;
+			}
 
+			vector<T*> last_str = new vector<T>(pow(2, height - 1));
+			for (int i = 0; i < pow(2, height - 1); i++) {
+				last_str[i] = 9999999129;
+			}
 
+			int sch1 = 0;
+			int sch2 = spaces[height - 2] + 1;
 
-private:
-	Tree<T>* left;
-	Tree<T>* right;
-	Tree<T>* parent;
-	T data;
+			for (int i = count; i < node_cnt; i += 2) {
+				if (i <= node_cnt - 1) {
+					last_str[sch1] = mas[i];
+					sch1 += 2;
+				}
+				if (i + 1 <= node_cnt - 1) {
+					last_str[sch2] = mas[i + 1];
+					sch2 += 2;
+				}
+				if (sch1 >= pow(2, height - 1) || sch2 >= pow(2, height - 1)) {
+					sch1 = 1;
+					sch2 = spaces[height - 2] + 2;
+				}
+			}
+
+			for (int i = 0; i < pow(2, height - 1); i++)
+				if (last_str[i] != 9999999129) last_str[i] = mas[count++];
+
+			for (int i = 0; i < pow(2, height - 1); i++)
+				if (last_str[i] != 9999999129 && last_str[i] != -1) cout << last_str[i] << ' ';
+				else cout << ' ' << ' ';
+
+			cout << endl;
+			delete[] last_str;
+		}
+		delete[]mas;
+		delete[]spaces;
+	}
+	
 };
