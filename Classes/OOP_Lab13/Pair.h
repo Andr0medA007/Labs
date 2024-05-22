@@ -18,7 +18,6 @@ public:
 	}
 	~Pair() {};
 	void Print(const Pair&p) { cout << this->first << " : " << this->second << endl; };
-
 	Pair operator+(Pair& p) {
 		first = first + p.first;
 		second = second + p.second;

@@ -1,5 +1,0 @@
-﻿  Main.cpp
-C:\Users\Andre\source\repos\Graph\Graph.h(7,17): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-  (компиляция исходного файла "Main.cpp")
-  
-  Graph.vcxproj -> C:\Users\Andre\source\repos\Graph\x64\Debug\Graph.exe

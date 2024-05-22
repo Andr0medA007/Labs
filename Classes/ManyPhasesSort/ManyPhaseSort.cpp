@@ -15,24 +15,6 @@ void print_mas(T mas)
 	cout << '\n';
 }
 
-void natural_merge(vector<int>& vect1, vector<int>& vect2)
-{
-	for (int i = 0; i < vect2.size(); i++)
-	{
-		vect1.push_back(vect2[i]);
-		for (int j = vect1.size() - 1; j > 0; j--)
-		{
-			if (vect1[j] < vect1[j - 1])
-			{
-				swap(vect1[j], vect1[j - 1]);
-			}
-			else
-			{
-				break;
-			}
-		}
-	}
-}
 void natural_merge_sort(int* mas)
 {
 	vector <vector<int>> series;
@@ -159,6 +141,6 @@ int main()
 		mas_manyphases_merge[i] = rand() % 100 - 50;
 	}
 	print_mas(mas_manyphases_merge);
-	natural_merge_sort(mas_manyphases_merge);
+	multiphase_merge_sort(mas_manyphases_merge);
 	print_mas(mas_manyphases_merge);
 }

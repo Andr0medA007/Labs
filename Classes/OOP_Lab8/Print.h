@@ -153,7 +153,6 @@ protected:
 public:
 	Dialog() { is_over = 0; }
 	~Dialog() {};
-
 	void Execute() {
 		printf("c - создать новую группу\na - добавить новый элемент\nd - удалить элемент\np - вывести группу\npn - Вывести только авторов\nq - выход ");
 		

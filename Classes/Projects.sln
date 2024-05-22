@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_Lab10", "OOP_Lab10\OOP_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OnePhaseSort", "OnePhaseSort\OnePhaseSort.vcxproj", "{66B4E2AE-1BCB-454B-9F67-645842E18535}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ManyPhaseSort", "ManyPhasesSort\ManyPhaseSort.vcxproj", "{3AE3BD19-586E-4FE9-951C-576ADFB26ECB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{66B4E2AE-1BCB-454B-9F67-645842E18535}.Release|x64.Build.0 = Release|x64
 		{66B4E2AE-1BCB-454B-9F67-645842E18535}.Release|x86.ActiveCfg = Release|Win32
 		{66B4E2AE-1BCB-454B-9F67-645842E18535}.Release|x86.Build.0 = Release|Win32
+		{3AE3BD19-586E-4FE9-951C-576ADFB26ECB}.Debug|x64.ActiveCfg = Debug|x64
+		{3AE3BD19-586E-4FE9-951C-576ADFB26ECB}.Debug|x64.Build.0 = Debug|x64
+		{3AE3BD19-586E-4FE9-951C-576ADFB26ECB}.Debug|x86.ActiveCfg = Debug|Win32
+		{3AE3BD19-586E-4FE9-951C-576ADFB26ECB}.Debug|x86.Build.0 = Debug|Win32
+		{3AE3BD19-586E-4FE9-951C-576ADFB26ECB}.Release|x64.ActiveCfg = Release|x64
+		{3AE3BD19-586E-4FE9-951C-576ADFB26ECB}.Release|x64.Build.0 = Release|x64
+		{3AE3BD19-586E-4FE9-951C-576ADFB26ECB}.Release|x86.ActiveCfg = Release|Win32
+		{3AE3BD19-586E-4FE9-951C-576ADFB26ECB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

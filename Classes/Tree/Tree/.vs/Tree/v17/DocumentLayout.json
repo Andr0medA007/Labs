@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Andre\\Desktop\\WorkSpace\\Labs\\Classes\\Tree\\Tree\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E15DE7DC-AA20-4D52-A870-2F6EE20C5EF3}|Tree.vcxproj|C:\\Users\\Andre\\Desktop\\WorkSpace\\Labs\\Classes\\Tree\\Tree\\tree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E15DE7DC-AA20-4D52-A870-2F6EE20C5EF3}|Tree.vcxproj|solutionrelative:tree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E15DE7DC-AA20-4D52-A870-2F6EE20C5EF3}|Tree.vcxproj|C:\\Users\\Andre\\Desktop\\WorkSpace\\Labs\\Classes\\Tree\\Tree\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E15DE7DC-AA20-4D52-A870-2F6EE20C5EF3}|Tree.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "tree.h",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\WorkSpace\\Labs\\Classes\\Tree\\Tree\\tree.h",
+              "RelativeDocumentMoniker": "tree.h",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\WorkSpace\\Labs\\Classes\\Tree\\Tree\\tree.h",
+              "RelativeToolTip": "tree.h",
+              "ViewState": "AQIAAP4AAAAAAAAAAAAnwAgBAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-16T10:49:45.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Andre\\Desktop\\WorkSpace\\Labs\\Classes\\Tree\\Tree\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\Andre\\Desktop\\WorkSpace\\Labs\\Classes\\Tree\\Tree\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-16T10:49:44.049Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

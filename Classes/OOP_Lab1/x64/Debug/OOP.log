@@ -1,2 +1,5 @@
-﻿  OOP.cpp
-  OOP.vcxproj -> C:\Users\Andre\source\repos\OOP\x64\Debug\OOP.exe
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (OOP.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  OOP.cpp
+  Progress.cpp
+  Создание кода...
+  OOP.vcxproj -> C:\Users\Andre\Desktop\WorkSpace\Labs\Classes\x64\Debug\OOP_Lab1.exe
