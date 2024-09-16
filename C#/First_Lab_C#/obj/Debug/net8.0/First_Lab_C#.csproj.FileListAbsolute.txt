@@ -1,0 +1,15 @@
+C:\Users\Andre\source\repos\First_Lab_C#\bin\Debug\net8.0\First_Lab_C#.exe
+C:\Users\Andre\source\repos\First_Lab_C#\bin\Debug\net8.0\First_Lab_C#.deps.json
+C:\Users\Andre\source\repos\First_Lab_C#\bin\Debug\net8.0\First_Lab_C#.runtimeconfig.json
+C:\Users\Andre\source\repos\First_Lab_C#\bin\Debug\net8.0\First_Lab_C#.dll
+C:\Users\Andre\source\repos\First_Lab_C#\bin\Debug\net8.0\First_Lab_C#.pdb
+C:\Users\Andre\source\repos\First_Lab_C#\obj\Debug\net8.0\First_Lab_C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andre\source\repos\First_Lab_C#\obj\Debug\net8.0\First_Lab_C#.AssemblyInfoInputs.cache
+C:\Users\Andre\source\repos\First_Lab_C#\obj\Debug\net8.0\First_Lab_C#.AssemblyInfo.cs
+C:\Users\Andre\source\repos\First_Lab_C#\obj\Debug\net8.0\First_Lab_C#.csproj.CoreCompileInputs.cache
+C:\Users\Andre\source\repos\First_Lab_C#\obj\Debug\net8.0\First_Lab_C#.sourcelink.json
+C:\Users\Andre\source\repos\First_Lab_C#\obj\Debug\net8.0\First_Lab_C#.dll
+C:\Users\Andre\source\repos\First_Lab_C#\obj\Debug\net8.0\refint\First_Lab_C#.dll
+C:\Users\Andre\source\repos\First_Lab_C#\obj\Debug\net8.0\First_Lab_C#.pdb
+C:\Users\Andre\source\repos\First_Lab_C#\obj\Debug\net8.0\First_Lab_C#.genruntimeconfig.cache
+C:\Users\Andre\source\repos\First_Lab_C#\obj\Debug\net8.0\ref\First_Lab_C#.dll
